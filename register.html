@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Enterprise Account | Verdant Ecosystems</title>
+  <meta name="description" content="Create a new corporate recycling account to start your journey towards zero landfill and circular resource tracking.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23A8D85C'><path d='M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A7.003 7.003 0 0 1 5.07 11H5a1 1 0 0 1 0-2h.07A7.003 7.003 0 0 1 11 3.07V3a1 1 0 0 1 2 0v.07A7.003 7.003 0 0 1 18.93 9H19a1 1 0 0 1 0 2h-.07A7.003 7.003 0 0 1 13 16.93z'/></svg>">
+
+  <!-- Core Libraries CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Fullscreen Split Authentication Wrapper (No public header or footer) -->
+  <div class="auth-page-wrapper">
+    
+    <!-- Left / Form Side -->
+    <div class="auth-form-side py-4">
+      
+      <!-- Top Bar: Logo & Controls -->
+      <div class="d-flex align-items-center justify-content-between mb-4">
+        <!-- Logo redirecting directly to homepage -->
+        <a href="index.html" class="brand-logo" aria-label="Verdant Homepage">
+          <div class="brand-logo-mark">
+            <i data-lucide="recycle" style="width: 24px; height: 24px;"></i>
+          </div>
+          <div class="brand-logo-text">
+            <span>VERDANT</span>
+            <small>CLEAN ENERGY &amp; RECYCLING</small>
+          </div>
+        </a>
+
+        <!-- Theme & RTL Controls -->
+        <div class="d-flex align-items-center gap-2">
+          <button type="button" class="btn-icon theme-toggle-btn" aria-label="Toggle Theme">
+            <span class="theme-icon"><i data-lucide="moon" style="width: 18px; height: 18px;"></i></span>
+          </button>
+          <button type="button" class="btn-icon dir-toggle-btn" aria-label="Toggle RTL/LTR">
+            <span class="dir-label fw-bold" style="font-size: 0.78rem;">RTL</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Auth Form Card Body -->
+      <div>
+        <div class="badge-eco mb-2">New Partner Registration</div>
+        <h1 class="h2 fw-bold mb-2">Create Your Account</h1>
+        <p class="text-muted small mb-4">Join over 2,400 organizations achieving zero landfill and certified carbon offsets.</p>
+
+        <form id="verdantRegisterForm">
+          
+          <!-- Full Name -->
+          <div class="mb-3">
+            <label for="regName" class="form-label-custom">Full Name <span class="text-danger">*</span></label>
+            <div class="position-relative">
+              <input type="text" id="regName" class="form-control-custom ps-5" placeholder="e.g. Thomas Campbell" required>
+              <i data-lucide="user" class="position-absolute top-50 translate-middle-y text-muted" style="inset-inline-start: 1rem; width: 18px; height: 18px;"></i>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="regEmail" class="form-label-custom">Corporate Email Address <span class="text-danger">*</span></label>
+            <div class="position-relative">
+              <input type="email" id="regEmail" class="form-control-custom ps-5" placeholder="thomas@enterprise.com" required>
+              <i data-lucide="mail" class="position-absolute top-50 translate-middle-y text-muted" style="inset-inline-start: 1rem; width: 18px; height: 18px;"></i>
+            </div>
+          </div>
+
+          <!-- Phone Number -->
+          <div class="mb-3">
+            <label for="regPhone" class="form-label-custom">Phone Number <span class="text-danger">*</span></label>
+            <div class="position-relative">
+              <input type="tel" id="regPhone" class="form-control-custom ps-5" placeholder="+44 20 7946 0991" required>
+              <i data-lucide="phone" class="position-absolute top-50 translate-middle-y text-muted" style="inset-inline-start: 1rem; width: 18px; height: 18px;"></i>
+            </div>
+          </div>
+
+          <!-- Password -->
+          <div class="mb-3">
+            <label for="regPassword" class="form-label-custom">Password <span class="text-danger">*</span></label>
+            <div class="position-relative">
+              <input type="password" id="regPassword" class="form-control-custom ps-5 pe-5" placeholder="Minimum 6 characters" required>
+              <i data-lucide="lock" class="position-absolute top-50 translate-middle-y text-muted" style="inset-inline-start: 1rem; width: 18px; height: 18px;"></i>
+              <button type="button" class="btn position-absolute top-50 translate-middle-y p-0 border-0 text-muted password-toggle-btn" data-target="regPassword" style="inset-inline-end: 1rem;" aria-label="Toggle password visibility">
+                <i data-lucide="eye" style="width: 18px; height: 18px;"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="mb-3">
+            <label for="regConfirmPassword" class="form-label-custom">Confirm Password <span class="text-danger">*</span></label>
+            <div class="position-relative">
+              <input type="password" id="regConfirmPassword" class="form-control-custom ps-5 pe-5" placeholder="Re-type password" required>
+              <i data-lucide="shield-check" class="position-absolute top-50 translate-middle-y text-muted" style="inset-inline-start: 1rem; width: 18px; height: 18px;"></i>
+              <button type="button" class="btn position-absolute top-50 translate-middle-y p-0 border-0 text-muted password-toggle-btn" data-target="regConfirmPassword" style="inset-inline-end: 1rem;" aria-label="Toggle password visibility">
+                <i data-lucide="eye" style="width: 18px; height: 18px;"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Terms Checkbox -->
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" id="regTerms" required>
+            <label class="form-check-label small text-muted" for="regTerms">
+              I agree to the <a href="contact.html" class="text-decoration-underline text-body">Terms of Service</a>, <a href="contact.html" class="text-decoration-underline text-body">Duty of Care Waste Regulations</a>, and <a href="contact.html" class="text-decoration-underline text-body">Privacy Policy</a>.
+            </label>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn-lime w-100 py-3 justify-content-center mb-3">
+            <i data-lucide="user-plus" style="width: 18px; height: 18px;"></i>
+            <span class="fs-6">Create Account</span>
+          </button>
+
+          <!-- Login Redirect Link -->
+          <div class="text-center">
+            <span class="small text-muted">Already registered with Verdant?</span>
+            <a href="login.html" class="small fw-bold text-decoration-none ms-1" style="color: var(--color-primary);">Sign In &rarr;</a>
+          </div>
+
+        </form>
+
+        <div class="text-center mt-4 pt-3 border-top border-light">
+          <a href="index.html" class="small text-muted d-inline-flex align-items-center gap-1">
+            <i data-lucide="arrow-left" style="width: 14px; height: 14px;" class="icon-flip-rtl"></i>
+            <span>Return to Public Homepage</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Right / Brand Graphic Side -->
+    <div class="auth-brand-side">
+      <img src="im/chelsea-WvusC5M-TM8-unsplash.jpg" alt="Circular Resource Balers" class="auth-brand-bg">
+      
+      <div class="auth-brand-content d-flex justify-content-between align-items-center">
+        <span class="badge-eco" style="background: rgba(168,216,92,0.25); color: #A8D85C;">2027 Circular Platform</span>
+        <span class="small text-white-50">B-Corp Accredited</span>
+      </div>
+
+      <div class="auth-brand-content my-auto py-5">
+        <div class="d-inline-flex p-3 rounded-circle mb-4" style="background: rgba(168,216,92,0.2); color: #A8D85C;">
+          <i data-lucide="recycle" style="width: 36px; height: 36px;"></i>
+        </div>
+        <h2 class="display-6 fw-bold text-white mb-3">
+          Accelerate Your Journey To Zero Waste
+        </h2>
+        <p class="fs-5 text-white-50 mb-4" style="max-width: 520px;">
+          Set up multi-site waste collection schedules, order smart compactors, and track real-time CO2 avoidance metrics verified for your ESG investor reports.
+        </p>
+        <div class="d-flex align-items-center gap-4 text-white-50 small">
+          <div><strong class="text-white d-block fs-5">48-Hr</strong> Rapid Setup</div>
+          <div><strong class="text-white d-block fs-5">100%</strong> Zero Direct Landfill</div>
+          <div><strong class="text-white d-block fs-5">Full</strong> Chain-Of-Custody</div>
+        </div>
+      </div>
+
+      <div class="auth-brand-content text-white-50 small">
+        &copy; 2027 Verdant Ecosystems Ltd. All rights reserved. Registered UK Waste Broker CBDU129840.
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>

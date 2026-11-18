@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verdant Ecosystems | Sustainable Recycling & Clean Energy Solutions</title>
+  <meta name="description" content="Turning waste into tomorrow's resources. Leading corporate recycling, circular waste logistics, and clean energy conversion.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23A8D85C'><path d='M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A7.003 7.003 0 0 1 5.07 11H5a1 1 0 0 1 0-2h.07A7.003 7.003 0 0 1 11 3.07V3a1 1 0 0 1 2 0v.07A7.003 7.003 0 0 1 18.93 9H19a1 1 0 0 1 0 2h-.07A7.003 7.003 0 0 1 13 16.93z'/></svg>">
+
+  <!-- Core Libraries CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container-fluid px-lg-5">
+      <div class="d-flex align-items-center justify-content-between">
+        
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo" aria-label="Verdant Ecosystems Homepage">
+          <div class="brand-logo-mark">
+            <i data-lucide="recycle" style="width: 24px; height: 24px;"></i>
+          </div>
+          <div class="brand-logo-text">
+            <span>VERDANT</span>
+            <small>CLEAN ENERGY &amp; RECYCLING</small>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Bar -->
+        <nav class="d-none d-xl-flex align-items-center gap-1" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link-custom active">Home</a>
+          <a href="about.html" class="nav-link-custom">About Us</a>
+
+          <!-- Services Dropdown -->
+          <div class="dropdown">
+            <a href="services.html" class="nav-link-custom dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span>Recycling Services</span>
+              <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-custom">
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="services.html#residential">
+                  <i data-lucide="home" style="width: 16px; height: 16px; color: var(--color-primary);"></i>
+                  <span>Residential Recycling</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="services.html#commercial">
+                  <i data-lucide="building-2" style="width: 16px; height: 16px; color: var(--color-primary);"></i>
+                  <span>Commercial &amp; Enterprise</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="services.html#industrial">
+                  <i data-lucide="factory" style="width: 16px; height: 16px; color: var(--color-primary);"></i>
+                  <span>Industrial Waste Systems</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="services.html#ewaste">
+                  <i data-lucide="cpu" style="width: 16px; height: 16px; color: var(--color-primary);"></i>
+                  <span>Electronic Waste (WEEE)</span>
+                </a>
+              </li>
+              <li><hr class="dropdown-divider my-1"></li>
+              <li>
+                <a class="dropdown-item dropdown-item-custom text-success fw-bold" href="services.html">
+                  <i data-lucide="layers" style="width: 16px; height: 16px;"></i>
+                  <span>View All 8 Services</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <a href="materials.html" class="nav-link-custom">Accepted Materials</a>
+          <a href="process.html" class="nav-link-custom">Process &amp; Impact</a>
+          <a href="service-areas.html" class="nav-link-custom">Service Areas</a>
+          <a href="contact.html" class="nav-link-custom">Contact</a>
+        </nav>
+
+        <!-- Right Header Utility Controls (Desktop) -->
+        <div class="d-none d-xl-flex align-items-center gap-2">
+          <!-- Theme Toggle -->
+          <button type="button" class="btn-icon theme-toggle-btn" aria-label="Toggle Theme">
+            <span class="theme-icon"><i data-lucide="moon" style="width: 18px; height: 18px;"></i></span>
+          </button>
+
+          <!-- RTL / LTR Toggle -->
+          <button type="button" class="btn-icon dir-toggle-btn" aria-label="Toggle RTL/LTR">
+            <span class="dir-label fw-bold" style="font-size: 0.78rem;">RTL</span>
+          </button>
+
+          <!-- User Authentication Portal Slot -->
+          <div class="auth-nav-slot ms-1">
+            <a href="login.html" class="btn btn-outline-custom py-2 px-3" style="font-size: 0.88rem;">
+              <i data-lucide="log-in" style="width: 16px; height: 16px;"></i>
+              <span>Client Portal</span>
+            </a>
+          </div>
+
+          <!-- Schedule Pickup CTA -->
+          <a href="contact.html" class="btn-lime py-2 px-3 ms-1" style="font-size: 0.88rem;">
+            <i data-lucide="calendar" style="width: 16px; height: 16px;"></i>
+            <span>Schedule Pickup</span>
+          </a>
+        </div>
+
+        <!-- Mobile & Tablet Hamburger Button (Shown < 1200px) -->
+        <div class="d-flex d-xl-none align-items-center">
+          <button class="btn btn-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavDrawer" aria-controls="mobileNavDrawer" aria-label="Open Navigation Menu" style="width: 42px; height: 42px;">
+            <i data-lucide="menu" style="width: 22px; height: 22px;"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MOBILE OFFCANVAS DRAWER (360px, 768px, 1024px)
+       ========================================================================== -->
+  <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileNavDrawer" aria-labelledby="mobileNavDrawerLabel">
+    <div class="offcanvas-header border-bottom border-light p-3">
+      <div class="d-flex align-items-center gap-2">
+        <div class="brand-logo-mark" style="width: 36px; height: 36px;">
+          <i data-lucide="recycle" style="width: 20px; height: 20px;"></i>
+        </div>
+        <span class="fw-bold fs-5" id="mobileNavDrawerLabel">VERDANT</span>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
+      <div class="d-flex flex-column gap-2">
+        <a href="index.html" class="nav-link-custom fs-6 py-2 active">Home</a>
+        <a href="about.html" class="nav-link-custom fs-6 py-2">About Us</a>
+        
+        <!-- Mobile Services Collapsible Dropdown -->
+        <div>
+          <button class="nav-link-custom fs-6 py-2 w-100 justify-content-between bg-transparent border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mobileServicesCollapse" aria-expanded="false" aria-controls="mobileServicesCollapse">
+            <span>Recycling Services</span>
+            <i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i>
+          </button>
+          <div class="collapse" id="mobileServicesCollapse">
+            <div class="d-flex flex-column gap-1 ps-3 pe-3 py-1 border-start border-2 border-light ms-2 my-1">
+              <a href="services.html#residential" class="nav-link-custom small py-1 text-muted">Residential Recycling</a>
+              <a href="services.html#commercial" class="nav-link-custom small py-1 text-muted">Commercial &amp; Enterprise</a>
+              <a href="services.html#industrial" class="nav-link-custom small py-1 text-muted">Industrial Waste Systems</a>
+              <a href="services.html#plastic" class="nav-link-custom small py-1 text-muted">Plastics &amp; Polymers</a>
+              <a href="services.html#ewaste" class="nav-link-custom small py-1 text-muted">Electronic Waste (WEEE)</a>
+              <a href="services.html" class="nav-link-custom small py-1 text-success fw-bold">All 8 Services &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="materials.html" class="nav-link-custom fs-6 py-2">Accepted Materials</a>
+        <a href="process.html" class="nav-link-custom fs-6 py-2">Process &amp; Environmental Impact</a>
+        <a href="service-areas.html" class="nav-link-custom fs-6 py-2">Service Coverage Areas</a>
+        <a href="contact.html" class="nav-link-custom fs-6 py-2">Contact &amp; Pickup Enquiry</a>
+
+        <hr class="my-3 border-light">
+
+        <!-- Mobile Controls -->
+        <div class="d-flex align-items-center justify-content-between py-2">
+          <span class="small fw-bold">Appearance:</span>
+          <button type="button" class="btn btn-outline-custom theme-toggle-btn py-1 px-3" style="font-size: 0.85rem;">
+            <span class="theme-icon me-1"><i data-lucide="moon" style="width: 14px; height: 14px;"></i></span>
+            <span>Switch Theme</span>
+          </button>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-between py-2">
+          <span class="small fw-bold">Reading Direction:</span>
+          <button type="button" class="btn btn-outline-custom dir-toggle-btn py-1 px-3" style="font-size: 0.85rem;">
+            <i data-lucide="languages" style="width: 14px; height: 14px; margin-inline-end: 4px;"></i>
+            <span class="dir-label">RTL</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="pt-4 border-top border-light mt-auto">
+        <div class="auth-nav-slot mb-2">
+          <a href="login.html" class="btn btn-outline-custom w-100 justify-content-center">
+            <i data-lucide="log-in" style="width: 16px; height: 16px;"></i>
+            <span>Client Portal Login</span>
+          </a>
+        </div>
+        <a href="contact.html" class="btn-lime w-100 justify-content-center">
+          <i data-lucide="truck" style="width: 16px; height: 16px;"></i>
+          <span>Schedule Waste Pickup</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       HERO SECTION WITH THREE.JS RECYCLING PARTICLES
+       ========================================================================== -->
+  <section class="hero-wrapper" id="homeHero">
+    <!-- Three.js 3D Canvas Background -->
+    <div id="heroThreeContainer" class="hero-canvas-container"></div>
+    
+    <!-- Background Texture Layer -->
+    <div class="hero-bg-layer" style="background-image: url('im/ari-gardinier-WE8LyB7YrBM-unsplash.jpg');"></div>
+
+    <div class="container hero-content">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-8" data-aos="fade-up" data-aos-duration="1000">
+          
+          <div class="badge-eco mb-3">
+            <i data-lucide="sparkles" style="width: 14px; height: 14px;"></i>
+            <span>Next-Generation Circular Resource Engineering</span>
+          </div>
+
+          <h1 class="hero-title">
+            Turning Waste Into <br>
+            <span class="text-highlight">Tomorrow's Resources.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Verdant Ecosystems powers the 2027 net-zero circular economy. We provide end-to-end sustainable recycling logistics, smart sorting robotics, and zero-landfill clean energy conversion for forward-thinking enterprises and communities.
+          </p>
+
+          <div class="d-flex flex-wrap align-items-center gap-3">
+            <a href="services.html" class="btn-lime">
+              <span>Explore Our Services</span>
+              <i data-lucide="arrow-right" style="width: 18px; height: 18px;" class="icon-flip-rtl"></i>
+            </a>
+
+            <a href="contact.html" class="btn-outline-custom text-white border-white">
+              <i data-lucide="calendar" style="width: 18px; height: 18px;"></i>
+              <span>Schedule a Pickup</span>
+            </a>
+          </div>
+
+          <!-- Hero Animated Numerical Counters -->
+          <div class="hero-stats-banner" data-aos="fade-up" data-aos-delay="200">
+            <div class="row g-4 text-center text-md-start">
+              
+              <div class="col-6 col-md-3 stat-item">
+                <div class="stat-number">
+                  <span class="counter-value" data-target="99">0</span>%
+                </div>
+                <div class="stat-label">Landfill Diversion Rate</div>
+              </div>
+
+              <div class="col-6 col-md-3 stat-item">
+                <div class="stat-number">
+                  <span class="counter-value" data-target="480">0</span>k+
+                </div>
+                <div class="stat-label">Tonnes Processed / Year</div>
+              </div>
+
+              <div class="col-6 col-md-3 stat-item">
+                <div class="stat-number">
+                  <span class="counter-value" data-target="100">0</span>%
+                </div>
+                <div class="stat-label">Electrified Collection Fleet</div>
+              </div>
+
+              <div class="col-6 col-md-3 stat-item">
+                <div class="stat-number">
+                  <span class="counter-value" data-target="140">0</span>GWh
+                </div>
+                <div class="stat-label">Clean Energy Generated</div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-4 d-none d-lg-block" data-aos="fade-left" data-aos-duration="1000">
+          <div class="card-modern glass-panel p-4 text-white border-0" style="background: rgba(20, 44, 37, 0.7); border: 1px solid rgba(168, 216, 92, 0.25);">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="p-3 rounded-circle bg-success text-white" style="background-color: #A8D85C !important; color: #142C25 !important;">
+                <i data-lucide="shield-check" style="width: 28px; height: 28px;"></i>
+              </div>
+              <div>
+                <h5 class="mb-0 text-white">ISO 14001 &amp; B-Corp</h5>
+                <small class="text-white-50">Fully Audited Compliance</small>
+              </div>
+            </div>
+            <p class="small text-white-50 mb-3">
+              Every kilogram collected is tracked with blockchain material provenance certificates, guaranteeing zero landfill disposal and ethical secondary recycling.
+            </p>
+            <div class="d-flex align-items-center justify-content-between pt-2 border-top border-secondary">
+              <span class="small fw-bold text-white">Fast Service Coverage:</span>
+              <a href="service-areas.html" class="small fw-bold text-decoration-underline" style="color: #A8D85C;">Check Postcode &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PARTNER & CERTIFICATION LOGOS
+       ========================================================================== -->
+  <section class="partners-wrapper">
+    <div class="container">
+      <div class="row align-items-center justify-content-between g-4 text-center">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="partner-logo-item">
+            <span>&bull; CIRCULAR UK</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="partner-logo-item">
+            <span>&bull; ISO 14001</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="partner-logo-item">
+            <span>&bull; B-CORP 2026</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="partner-logo-item">
+            <span>&bull; CARBON TRUST</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="partner-logo-item">
+            <span>&bull; ECOVADIS GOLD</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="partner-logo-item">
+            <span>&bull; NET-ZERO 2030</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FEATURED RECYCLING SERVICES
+       ========================================================================== -->
+  <section class="section-padding" id="featuredServices">
+    <div class="container">
+      
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end section-head" data-aos="fade-up">
+        <div>
+          <span class="section-subtitle">
+            <i data-lucide="layers" style="width: 16px; height: 16px;"></i>
+            Integrated Circular Solutions
+          </span>
+          <h2 class="section-title">Specialized Recycling Services</h2>
+          <p class="section-desc">Custom tailored collection, automated optical recovery, and closed-loop material cycles for enterprise, industry, and municipal sectors.</p>
+        </div>
+        <div class="mt-3 mt-md-0">
+          <a href="services.html" class="btn-outline-custom">
+            <span>View All Services</span>
+            <i data-lucide="arrow-right" style="width: 16px; height: 16px;" class="icon-flip-rtl"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Service 1: Commercial -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card">
+            <div class="service-card-media">
+              <img src="im/tommao-wang-U6e6mTcsdok-unsplash.jpg" alt="Commercial Waste Management" loading="lazy">
+              <span class="service-badge">Commercial</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">Commercial Recycling</h3>
+              <p>Reliable wheelie bins, smart compactors, and scheduled collection routes for corporate offices, retail complexes, and commercial venues.</p>
+              <ul class="service-feature-list">
+                <li><i data-lucide="check"></i> 99% Landfill diversion guarantee</li>
+                <li><i data-lucide="check"></i> Tailored collection frequencies</li>
+                <li><i data-lucide="check"></i> Monthly audited ESG impact reports</li>
+              </ul>
+              <div class="mt-auto pt-3 border-top border-light d-flex justify-content-between align-items-center">
+                <a href="services.html#commercial" class="fw-bold small text-decoration-none" style="color: var(--color-primary);">Explore Service &rarr;</a>
+                <a href="contact.html?service=commercial" class="btn-lime py-1 px-3 small" style="font-size: 0.8rem;">Enquire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2: Industrial -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card">
+            <div class="service-card-media">
+              <img src="im/sasun-bughdaryan-PRJDZIHKNzU-unsplash.jpg" alt="Industrial Waste Management" loading="lazy">
+              <span class="service-badge">Heavy Industry</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">Industrial Waste Management</h3>
+              <p>High-volume scrap handling, hazardous substance containment, roll-on roll-off containers, and customized zero-landfill plant infrastructure.</p>
+              <ul class="service-feature-list">
+                <li><i data-lucide="check"></i> Heavy tonnage container drops</li>
+                <li><i data-lucide="check"></i> Hazardous &amp; chemical certified</li>
+                <li><i data-lucide="check"></i> On-site compaction consultation</li>
+              </ul>
+              <div class="mt-auto pt-3 border-top border-light d-flex justify-content-between align-items-center">
+                <a href="services.html#industrial" class="fw-bold small text-decoration-none" style="color: var(--color-primary);">Explore Service &rarr;</a>
+                <a href="contact.html?service=industrial" class="btn-lime py-1 px-3 small" style="font-size: 0.8rem;">Enquire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3: Plastic Recycling -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card">
+            <div class="service-card-media">
+              <img src="im/cheung-yin-lVFqmoc0r8w-unsplash.jpg" alt="Plastic Polymers Recycling" loading="lazy">
+              <span class="service-badge">Polymer Science</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">Advanced Plastic Polymers</h3>
+              <p>High-resolution optical sorting, washing, and re-pelletizing of PET, HDPE, and LDPE resins directly into food-grade circular raw materials.</p>
+              <ul class="service-feature-list">
+                <li><i data-lucide="check"></i> Optical near-infrared separation</li>
+                <li><i data-lucide="check"></i> Food-grade circular pellets</li>
+                <li><i data-lucide="check"></i> Complete chain-of-custody tracking</li>
+              </ul>
+              <div class="mt-auto pt-3 border-top border-light d-flex justify-content-between align-items-center">
+                <a href="services.html#plastic" class="fw-bold small text-decoration-none" style="color: var(--color-primary);">Explore Service &rarr;</a>
+                <a href="contact.html?service=plastic" class="btn-lime py-1 px-3 small" style="font-size: 0.8rem;">Enquire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       HOW OUR RECYCLING PROCESS WORKS (4-STEP OVERVIEW)
+       ========================================================================== -->
+  <section class="section-padding bg-body-tertiary" id="howItWorks">
+    <div class="container">
+      
+      <div class="text-center section-head" data-aos="fade-up">
+        <span class="section-subtitle justify-content-center">
+          <i data-lucide="git-commit" style="width: 16px; height: 16px;"></i>
+          The Circular Journey
+        </span>
+        <h2 class="section-title">How Our Recycling Ecosystem Works</h2>
+        <p class="section-desc mx-auto">From smart electrified pickup to advanced secondary processing and clean energy regeneration.</p>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Step 1 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="process-card process-connector">
+            <div class="step-number">01</div>
+            <h4 class="mb-2">Smart Collection</h4>
+            <p class="small text-muted mb-0">Our 100% zero-emission electric fleet collects separated bins using route-optimized telematics to minimize transport carbon.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="process-card process-connector">
+            <div class="step-number">02</div>
+            <h4 class="mb-2">Robotic AI Sorting</h4>
+            <p class="small text-muted mb-0">High-speed optical sensors and robotic arms sort materials by polymer, alloy, and fiber grade with 99.4% purity.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="process-card process-connector">
+            <div class="step-number">03</div>
+            <h4 class="mb-2">Advanced Processing</h4>
+            <p class="small text-muted mb-0">Materials undergo de-inking, washing, granulation, and pelletizing, preparing pure raw materials for manufacturing.</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="process-card">
+            <div class="step-number">04</div>
+            <h4 class="mb-2">Energy &amp; Reuse</h4>
+            <p class="small text-muted mb-0">Non-recyclable residues are converted into clean electricity via advanced anaerobic digestion and thermal recovery.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-5" data-aos="fade-up">
+        <a href="process.html" class="btn-primary-custom">
+          <span>Explore Complete Process &amp; Impact Analytics</span>
+          <i data-lucide="arrow-right" style="width: 16px; height: 16px;" class="icon-flip-rtl"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ACCEPTED MATERIAL CATEGORIES OVERVIEW
+       ========================================================================== -->
+  <section class="section-padding" id="materialsOverview">
+    <div class="container">
+      
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5" data-aos="fade-right">
+          <span class="section-subtitle">
+            <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+            Rigorous Material Standards
+          </span>
+          <h2 class="section-title">What Can We Recycle Together?</h2>
+          <p class="mb-4">
+            Clean sorting starts with clear guidelines. Our facility processes paper, polymers, metals, electronics, and commercial food waste, transforming waste streams into certified raw manufacturing feedstocks.
+          </p>
+
+          <div class="d-flex flex-column gap-3 mb-4">
+            <div class="d-flex align-items-start gap-3">
+              <div class="p-2 rounded-circle bg-success text-white" style="background-color: var(--color-secondary) !important; color: #142C25 !important;">
+                <i data-lucide="file-text" style="width: 20px; height: 20px;"></i>
+              </div>
+              <div>
+                <h5 class="mb-1">Paper &amp; Cardboard</h5>
+                <p class="small text-muted mb-0">Corrugated shipping cartons, office archives, newspapers, packaging kraft.</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start gap-3">
+              <div class="p-2 rounded-circle bg-success text-white" style="background-color: var(--color-secondary) !important; color: #142C25 !important;">
+                <i data-lucide="box" style="width: 20px; height: 20px;"></i>
+              </div>
+              <div>
+                <h5 class="mb-1">Plastics &amp; Polymers</h5>
+                <p class="small text-muted mb-0">PET bottles, HDPE drums, PP containers, LDPE shrink wrap films.</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start gap-3">
+              <div class="p-2 rounded-circle bg-success text-white" style="background-color: var(--color-secondary) !important; color: #142C25 !important;">
+                <i data-lucide="cpu" style="width: 20px; height: 20px;"></i>
+              </div>
+              <div>
+                <h5 class="mb-1">Electronics &amp; Batteries</h5>
+                <p class="small text-muted mb-0">WEEE electronics, servers, smartphones, and sealed industrial batteries.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="materials.html" class="btn-primary-custom">
+            <span>Open Interactive Material Directory</span>
+            <i data-lucide="search" style="width: 16px; height: 16px;"></i>
+          </a>
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="position-relative">
+            <img src="im/chelsea-WvusC5M-TM8-unsplash.jpg" alt="Sorted Paper and Cardboard Recycling Bales" class="rounded-4 shadow-lg w-100" style="height: clamp(280px, 40vw, 480px); object-fit: cover;">
+            
+            <div class="position-absolute bottom-0 start-0 m-3 m-sm-4 p-3 p-sm-4 glass-panel text-white floating-image-badge" style="background: rgba(20, 44, 37, 0.88); border-radius: var(--radius-md); max-width: min(340px, calc(100% - 2rem));">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <i data-lucide="award" style="width: 20px; height: 20px; color: #A8D85C;"></i>
+                <span class="fw-bold text-white">Contamination Rate &lt; 0.6%</span>
+              </div>
+              <p class="small mb-0 text-white-50">
+                Industry-leading purity achieved through our dual-stream collection protocol and optical laser sensors.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ENVIRONMENTAL IMPACT METRICS
+       ========================================================================== -->
+  <section class="section-padding bg-dark text-white position-relative" style="background-color: #0E1F1A !important;" id="environmentalImpact">
+    <div class="container position-relative" style="z-index: 2;">
+      
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <span class="section-subtitle text-warning" style="color: #A8D85C !important;">
+            <i data-lucide="globe-2" style="width: 16px; height: 16px;"></i>
+            Tangible Planet Protection
+          </span>
+          <h2 class="section-title text-white">Verified Environmental Impact</h2>
+          <p class="text-white-50 mb-4">
+            We hold ourselves accountable to strict emissions tracking. Through closed-loop resource recovery, Verdant helps partners achieve their science-based climate targets.
+          </p>
+          <div class="p-3 rounded-3 mb-4" style="background: rgba(255, 255, 255, 0.06); border-inline-start: 4px solid #A8D85C;">
+            <small class="text-white-50 d-block mb-1">Demonstration Data Notice:</small>
+            <p class="small text-white mb-0">Impact figures shown reflect aggregated annual demonstration models based on standard UK waste benchmark factors.</p>
+          </div>
+          <a href="process.html#calculator" class="btn-lime">
+            <i data-lucide="calculator" style="width: 16px; height: 16px;"></i>
+            <span>Calculate Your Corporate Impact</span>
+          </a>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="row g-3">
+            
+            <div class="col-sm-6">
+              <div class="p-4 rounded-4" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1);">
+                <i data-lucide="cloud-off" style="width: 32px; height: 32px; color: #A8D85C;" class="mb-3"></i>
+                <div class="stat-number text-white"><span class="counter-value" data-target="215">0</span>k</div>
+                <div class="text-white-50 small">Metric Tonnes CO2e Avoided</div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="p-4 rounded-4" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1);">
+                <i data-lucide="trees" style="width: 32px; height: 32px; color: #A8D85C;" class="mb-3"></i>
+                <div class="stat-number text-white"><span class="counter-value" data-target="320">0</span>k</div>
+                <div class="text-white-50 small">Mature Trees Preserved</div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="p-4 rounded-4" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1);">
+                <i data-lucide="zap" style="width: 32px; height: 32px; color: #A8D85C;" class="mb-3"></i>
+                <div class="stat-number text-white"><span class="counter-value" data-target="98">0</span>k</div>
+                <div class="text-white-50 small">Homes Powered via Bio-Energy</div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="p-4 rounded-4" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1);">
+                <i data-lucide="droplet" style="width: 32px; height: 32px; color: #A8D85C;" class="mb-3"></i>
+                <div class="stat-number text-white"><span class="counter-value" data-target="450">0</span>M</div>
+                <div class="text-white-50 small">Liters Industrial Water Saved</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CUSTOMER TESTIMONIALS (SWIPER SLIDER)
+       ========================================================================== -->
+  <section class="section-padding" id="testimonials">
+    <div class="container">
+      
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end section-head" data-aos="fade-up">
+        <div>
+          <span class="section-subtitle">
+            <i data-lucide="message-square" style="width: 16px; height: 16px;"></i>
+            Client Testimonials
+          </span>
+          <h2 class="section-title">Trusted By Industry Leaders</h2>
+          <p class="section-desc">See how companies transitioned their operations to zero waste with Verdant.</p>
+        </div>
+        
+        <!-- Swiper Controls -->
+        <div class="d-flex align-items-center gap-2 mt-3 mt-md-0">
+          <button class="btn-icon swiper-btn-prev" aria-label="Previous Testimonial">
+            <i data-lucide="arrow-left" style="width: 18px; height: 18px;" class="icon-flip-rtl"></i>
+          </button>
+          <button class="btn-icon swiper-btn-next" aria-label="Next Testimonial">
+            <i data-lucide="arrow-right" style="width: 18px; height: 18px;" class="icon-flip-rtl"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Swiper Container -->
+      <div class="swiper testimonial-swiper pb-4" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div>
+                <div class="testimonial-rating">
+                  <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                  <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                  <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                  <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                  <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                </div>
+                <p class="testimonial-quote">
+                  "Verdant replaced our legacy waste supplier across 14 manufacturing sites. In under 9 months, we achieved zero-waste-to-landfill certification and reduced our quarterly waste haulage costs by 22%."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar bg-primary text-white d-flex align-items-center justify-content-center fw-bold fs-5" style="background-color: var(--color-primary) !important;">
+                  ET
+                </div>
+                <div>
+                  <h6 class="mb-0 fw-bold">Eleanor Vance</h6>
+                  <small class="text-muted">Head of Global Sustainability, Vance Industrial Group</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div>
+                <div class="testimonial-rating">
+                  <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                  <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                  <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                  <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                  <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                </div>
+                <p class="testimonial-quote">
+                  "Their WEEE collection and data sanitization protocol is remarkable. Every retired server and laptop arrived with tamper-proof certificates of destruction and recycled component manifests."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar bg-primary text-white d-flex align-items-center justify-content-center fw-bold fs-5" style="background-color: var(--color-primary) !important;">
+                  MR
+                </div>
+                <div>
+                  <h6 class="mb-0 fw-bold">Marcus Sterling</h6>
+                  <small class="text-muted">Chief Technology Officer, FinTech Nexus UK</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div>
+                <div class="testimonial-rating">
+                  <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                  <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                  <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                  <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                  <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                </div>
+                <p class="testimonial-quote">
+                  "The electric truck collection service has made our municipal residential pickups cleaner, quieter, and completely reliable. Their customer portal allows us to check fleet schedules live."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar bg-primary text-white d-flex align-items-center justify-content-center fw-bold fs-5" style="background-color: var(--color-primary) !important;">
+                  CL
+                </div>
+                <div>
+                  <h6 class="mb-0 fw-bold">Councillor Laura Evans</h6>
+                  <small class="text-muted">Director of Environmental Services, Metro Borough</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination mt-4"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FINAL PICKUP ENQUIRY CTA BANNER
+       ========================================================================== -->
+  <section class="section-padding bg-body-tertiary">
+    <div class="container">
+      <div class="card-modern p-4 p-lg-5 text-white position-relative overflow-hidden" style="background: linear-gradient(135deg, #142C25 0%, #1e463a 100%);">
+        
+        <div class="row align-items-center g-4 position-relative" style="z-index: 2;">
+          <div class="col-lg-8">
+            <span class="badge-eco mb-3" style="background-color: rgba(168, 216, 92, 0.2); color: #A8D85C;">
+              <i data-lucide="zap" style="width: 14px; height: 14px;"></i>
+              Ready For Zero Waste?
+            </span>
+            <h2 class="display-5 fw-bold text-white mb-3">
+              Request Your Tailored Waste Audit &amp; Pickup
+            </h2>
+            <p class="text-white-50 fs-5 mb-0" style="max-width: 600px;">
+              Join over 2,400 sustainable enterprises. Get a competitive commercial quotation or schedule an on-demand container pickup within 2 minutes.
+            </p>
+          </div>
+
+          <div class="col-lg-4 text-lg-end">
+            <div class="d-flex flex-column flex-sm-row flex-lg-column gap-3 justify-content-lg-end">
+              <a href="contact.html" class="btn-lime py-3 px-4 justify-content-center">
+                <i data-lucide="calendar" style="width: 18px; height: 18px;"></i>
+                <span>Schedule a Pickup</span>
+              </a>
+              <a href="service-areas.html" class="btn-outline-custom text-white border-white py-3 px-4 justify-content-center">
+                <i data-lucide="map-pin" style="width: 18px; height: 18px;"></i>
+                <span>Check Local Coverage</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5">
+        
+        <!-- Col 1: Brand & Bio -->
+        <div class="col-lg-4">
+          <a href="index.html" class="brand-logo mb-3" style="color: #FFFFFF;">
+            <div class="brand-logo-mark">
+              <i data-lucide="recycle" style="width: 24px; height: 24px;"></i>
+            </div>
+            <div class="brand-logo-text">
+              <span class="text-white">VERDANT</span>
+              <small class="text-white-50">CLEAN ENERGY &amp; RECYCLING</small>
+            </div>
+          </a>
+          <p class="small text-white-50 mb-4 pe-lg-4">
+            Verdant Ecosystems is a pioneering circular resource management and clean energy conversion corporation. We divert 99% of materials from landfill through advanced optical sorting and closed-loop remanufacturing.
+          </p>
+
+          <div class="d-flex align-items-center gap-2">
+            <a href="#" class="btn-icon" aria-label="LinkedIn" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: #fff;">
+              <i data-lucide="linkedin" style="width: 18px; height: 18px;"></i>
+            </a>
+            <a href="#" class="btn-icon" aria-label="Twitter / X" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: #fff;">
+              <i data-lucide="twitter" style="width: 18px; height: 18px;"></i>
+            </a>
+            <a href="#" class="btn-icon" aria-label="Instagram" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: #fff;">
+              <i data-lucide="instagram" style="width: 18px; height: 18px;"></i>
+            </a>
+            <a href="#" class="btn-icon" aria-label="YouTube" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: #fff;">
+              <i data-lucide="youtube" style="width: 18px; height: 18px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-title">Explore</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">All 8 Services</a></li>
+            <li><a href="materials.html" class="footer-link">Accepted Materials</a></li>
+            <li><a href="process.html" class="footer-link">Process &amp; Impact</a></li>
+            <li><a href="service-areas.html" class="footer-link">Service Areas</a></li>
+            <li><a href="contact.html" class="footer-link">Pickup Enquiry</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services Direct Links -->
+        <div class="col-6 col-lg-3">
+          <h5 class="footer-title">Recycling Services</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="services.html#residential" class="footer-link">Residential Recycling</a></li>
+            <li><a href="services.html#commercial" class="footer-link">Commercial &amp; Retail</a></li>
+            <li><a href="services.html#industrial" class="footer-link">Industrial Waste Solutions</a></li>
+            <li><a href="services.html#plastic" class="footer-link">Polymer &amp; Plastic Loops</a></li>
+            <li><a href="services.html#ewaste" class="footer-link">E-Waste &amp; Battery Safety</a></li>
+            <li><a href="services.html#paper" class="footer-link">Paper &amp; Cardboard Baling</a></li>
+            <li><a href="services.html#bulk" class="footer-link">Bulk Skip &amp; Roll-On Drops</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter & Direct Hotline -->
+        <div class="col-lg-3">
+          <h5 class="footer-title">Stay Informed</h5>
+          <p class="small text-white-50 mb-3">
+            Subscribe for circular economy whitepapers, compliance updates, and material market indices.
+          </p>
+
+          <form class="newsletter-form mb-4">
+            <div class="input-group">
+              <input type="email" class="form-control form-control-custom" placeholder="name@company.com" required style="background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.15); color: #fff;">
+              <button class="btn btn-lime" type="submit" style="padding: 0.6rem 1.2rem;">
+                <i data-lucide="send" style="width: 16px; height: 16px;"></i>
+              </button>
+            </div>
+          </form>
+
+          <div class="p-3 rounded-3" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <i data-lucide="phone-call" style="width: 16px; height: 16px; color: #A8D85C;"></i>
+              <span class="small fw-bold text-white">24/7 Operations Hotline</span>
+            </div>
+            <a href="tel:08004567890" class="fw-bold fs-6 text-decoration-none" style="color: #A8D85C;">0800 456 7890</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <p class="mb-0 text-white-50 small">
+          &copy; 2027 Verdant Ecosystems Ltd. All rights reserved. Registered Waste Carrier &amp; Broker Brokerage CBDU129840.
+        </p>
+
+        <div class="d-flex align-items-center gap-3">
+          <a href="contact.html" class="text-white-50 small hover-white">Privacy Policy</a>
+          <span class="text-white-50">&bull;</span>
+          <a href="contact.html" class="text-white-50 small hover-white">Terms of Waste Supply</a>
+          <span class="text-white-50">&bull;</span>
+          <a href="login.html" class="text-white-50 small hover-white">Staff / Portal Login</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/hero-three.js"></script>
+  <script src="assets/js/components.js"></script>
+</body>
+</html>

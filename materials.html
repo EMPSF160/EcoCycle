@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accepted Materials Directory | Verdant Ecosystems</title>
+  <meta name="description" content="Explore accepted and non-accepted materials, recycling rules, and live item search for clean circular recovery.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23A8D85C'><path d='M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A7.003 7.003 0 0 1 5.07 11H5a1 1 0 0 1 0-2h.07A7.003 7.003 0 0 1 11 3.07V3a1 1 0 0 1 2 0v.07A7.003 7.003 0 0 1 18.93 9H19a1 1 0 0 1 0 2h-.07A7.003 7.003 0 0 1 13 16.93z'/></svg>">
+
+  <!-- Core Libraries CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container-fluid px-lg-5">
+      <div class="d-flex align-items-center justify-content-between">
+        
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo" aria-label="Verdant Ecosystems Homepage">
+          <div class="brand-logo-mark">
+            <i data-lucide="recycle" style="width: 24px; height: 24px;"></i>
+          </div>
+          <div class="brand-logo-text">
+            <span>VERDANT</span>
+            <small>CLEAN ENERGY &amp; RECYCLING</small>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Bar -->
+        <nav class="d-none d-xl-flex align-items-center gap-1" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link-custom">Home</a>
+          <a href="about.html" class="nav-link-custom">About Us</a>
+
+          <div class="dropdown">
+            <a href="services.html" class="nav-link-custom dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span>Recycling Services</span>
+              <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-custom">
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="services.html#residential">
+                  <i data-lucide="home" style="width: 16px; height: 16px; color: var(--color-primary);"></i>
+                  <span>Residential Recycling</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="services.html#commercial">
+                  <i data-lucide="building-2" style="width: 16px; height: 16px; color: var(--color-primary);"></i>
+                  <span>Commercial &amp; Enterprise</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="services.html#industrial">
+                  <i data-lucide="factory" style="width: 16px; height: 16px; color: var(--color-primary);"></i>
+                  <span>Industrial Waste Systems</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="services.html#ewaste">
+                  <i data-lucide="cpu" style="width: 16px; height: 16px; color: var(--color-primary);"></i>
+                  <span>Electronic Waste (WEEE)</span>
+                </a>
+              </li>
+              <li><hr class="dropdown-divider my-1"></li>
+              <li>
+                <a class="dropdown-item dropdown-item-custom text-success fw-bold" href="services.html">
+                  <i data-lucide="layers" style="width: 16px; height: 16px;"></i>
+                  <span>View All 8 Services</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <a href="materials.html" class="nav-link-custom active">Accepted Materials</a>
+          <a href="process.html" class="nav-link-custom">Process &amp; Impact</a>
+          <a href="service-areas.html" class="nav-link-custom">Service Areas</a>
+          <a href="contact.html" class="nav-link-custom">Contact</a>
+        </nav>
+
+        <!-- Right Header Utility Controls (Desktop) -->
+        <div class="d-none d-xl-flex align-items-center gap-2">
+          <button type="button" class="btn-icon theme-toggle-btn" aria-label="Toggle Theme">
+            <span class="theme-icon"><i data-lucide="moon" style="width: 18px; height: 18px;"></i></span>
+          </button>
+
+          <button type="button" class="btn-icon dir-toggle-btn" aria-label="Toggle RTL/LTR">
+            <span class="dir-label fw-bold" style="font-size: 0.78rem;">RTL</span>
+          </button>
+
+          <div class="auth-nav-slot ms-1">
+            <a href="login.html" class="btn btn-outline-custom py-2 px-3" style="font-size: 0.88rem;">
+              <i data-lucide="log-in" style="width: 16px; height: 16px;"></i>
+              <span>Client Portal</span>
+            </a>
+          </div>
+
+          <a href="contact.html" class="btn-lime py-2 px-3 ms-1" style="font-size: 0.88rem;">
+            <i data-lucide="calendar" style="width: 16px; height: 16px;"></i>
+            <span>Schedule Pickup</span>
+          </a>
+        </div>
+
+        <!-- Mobile & Tablet Hamburger Button (Shown < 1200px) -->
+        <div class="d-flex d-xl-none align-items-center">
+          <button class="btn btn-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavDrawer" aria-controls="mobileNavDrawer" aria-label="Open Navigation Menu" style="width: 42px; height: 42px;">
+            <i data-lucide="menu" style="width: 22px; height: 22px;"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MOBILE OFFCANVAS DRAWER (360px, 768px, 1024px)
+       ========================================================================== -->
+  <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileNavDrawer" aria-labelledby="mobileNavDrawerLabel">
+    <div class="offcanvas-header border-bottom border-light p-3">
+      <div class="d-flex align-items-center gap-2">
+        <div class="brand-logo-mark" style="width: 36px; height: 36px;">
+          <i data-lucide="recycle" style="width: 20px; height: 20px;"></i>
+        </div>
+        <span class="fw-bold fs-5" id="mobileNavDrawerLabel">VERDANT</span>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
+      <div class="d-flex flex-column gap-2">
+        <a href="index.html" class="nav-link-custom fs-6 py-2">Home</a>
+        <a href="about.html" class="nav-link-custom fs-6 py-2">About Us</a>
+        
+        <!-- Mobile Services Collapsible Dropdown -->
+        <div>
+          <button class="nav-link-custom fs-6 py-2 w-100 justify-content-between bg-transparent border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mobileServicesCollapse" aria-expanded="false" aria-controls="mobileServicesCollapse">
+            <span>Recycling Services</span>
+            <i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i>
+          </button>
+          <div class="collapse" id="mobileServicesCollapse">
+            <div class="d-flex flex-column gap-1 ps-3 pe-3 py-1 border-start border-2 border-light ms-2 my-1">
+              <a href="services.html#residential" class="nav-link-custom small py-1 text-muted">Residential Recycling</a>
+              <a href="services.html#commercial" class="nav-link-custom small py-1 text-muted">Commercial &amp; Enterprise</a>
+              <a href="services.html#industrial" class="nav-link-custom small py-1 text-muted">Industrial Waste Systems</a>
+              <a href="services.html#plastic" class="nav-link-custom small py-1 text-muted">Plastics &amp; Polymers</a>
+              <a href="services.html#ewaste" class="nav-link-custom small py-1 text-muted">Electronic Waste (WEEE)</a>
+              <a href="services.html" class="nav-link-custom small py-1 text-success fw-bold">All 8 Services &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="materials.html" class="nav-link-custom fs-6 py-2 active">Accepted Materials</a>
+        <a href="process.html" class="nav-link-custom fs-6 py-2">Process &amp; Environmental Impact</a>
+        <a href="service-areas.html" class="nav-link-custom fs-6 py-2">Service Coverage Areas</a>
+        <a href="contact.html" class="nav-link-custom fs-6 py-2">Contact &amp; Pickup Enquiry</a>
+
+        <hr class="my-3 border-light">
+
+        <div class="d-flex align-items-center justify-content-between py-2">
+          <span class="small fw-bold">Appearance:</span>
+          <button type="button" class="btn btn-outline-custom theme-toggle-btn py-1 px-3" style="font-size: 0.85rem;">
+            <span class="theme-icon me-1"><i data-lucide="moon" style="width: 14px; height: 14px;"></i></span>
+            <span>Switch Theme</span>
+          </button>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-between py-2">
+          <span class="small fw-bold">Reading Direction:</span>
+          <button type="button" class="btn btn-outline-custom dir-toggle-btn py-1 px-3" style="font-size: 0.85rem;">
+            <i data-lucide="languages" style="width: 14px; height: 14px; margin-inline-end: 4px;"></i>
+            <span class="dir-label">RTL</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="pt-4 border-top border-light mt-auto">
+        <div class="auth-nav-slot mb-2">
+          <a href="login.html" class="btn btn-outline-custom w-100 justify-content-center">
+            <i data-lucide="log-in" style="width: 16px; height: 16px;"></i>
+            <span>Client Portal Login</span>
+          </a>
+        </div>
+        <a href="contact.html" class="btn-lime w-100 justify-content-center">
+          <i data-lucide="truck" style="width: 16px; height: 16px;"></i>
+          <span>Schedule Waste Pickup</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       PAGE HERO HEADER
+       ========================================================================== -->
+  <section class="page-hero-header">
+    <div class="hero-bg-overlay" style="background-image: url('im/kaffeebart-WB1qENKU_bo-unsplash.jpg');"></div>
+    <div class="container">
+      <div class="breadcrumb-custom">
+        <a href="index.html">Home</a>
+        <i data-lucide="chevron-right" style="width: 14px; height: 14px;" class="icon-flip-rtl"></i>
+        <span>Material Acceptance Guidelines</span>
+      </div>
+      <h1 class="page-title">Accepted Materials &amp; Sorting Guide</h1>
+      <p class="page-lead">
+        Learn exactly what can be recycled in our facilities, how to properly prepare items to prevent cross-contamination, and look up individual items with our live interactive tool.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INTERACTIVE LIVE ITEM LOOKUP TOOL
+       ========================================================================== -->
+  <section class="py-5 border-bottom border-light bg-body-tertiary">
+    <div class="container">
+      <div class="card-modern p-4 p-md-5 border-2 shadow-md" style="border-color: var(--color-secondary);">
+        
+        <div class="row align-items-center g-4">
+          <div class="col-lg-5">
+            <span class="badge-eco mb-2">
+              <i data-lucide="sparkles" style="width: 14px; height: 14px;"></i>
+              Instant Search Tool
+            </span>
+            <h3 class="mb-2">Can I Recycle This Item?</h3>
+            <p class="text-muted small mb-0">Type any everyday object (e.g. <em>"pizza box", "lithium battery", "milk bottle", "can", "mirror", "laptop"</em>) to see immediate acceptance rules.</p>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="position-relative">
+              <input type="text" id="materialSearchInput" class="form-control form-control-custom py-3 px-4 ps-5" placeholder="Search any item (e.g. Cardboard, Shampoo bottle, Battery)...">
+              <i data-lucide="search" class="position-absolute top-50 translate-middle-y text-muted" style="inset-inline-start: 1.25rem; width: 20px; height: 20px;"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Instant Lookup Results Box -->
+        <div id="materialQuickResult" class="d-none mt-4"></div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CATEGORY FILTER BUTTONS
+       ========================================================================== -->
+  <section class="py-4 border-bottom border-light">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center gap-2">
+        <button class="material-filter-pill active" data-filter="all">All 7 Categories</button>
+        <button class="material-filter-pill" data-filter="paper">1. Paper &amp; Cardboard</button>
+        <button class="material-filter-pill" data-filter="plastic">2. Plastics &amp; Polymers</button>
+        <button class="material-filter-pill" data-filter="glass">3. Glass Containers</button>
+        <button class="material-filter-pill" data-filter="metals">4. Metals &amp; Alloys</button>
+        <button class="material-filter-pill" data-filter="electronics">5. Electronics (WEEE)</button>
+        <button class="material-filter-pill" data-filter="batteries">6. Batteries</button>
+        <button class="material-filter-pill" data-filter="organic">7. Organic &amp; Food</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DETAILED ACCEPTED / PROHIBITED COMPARISON CARDS
+       ========================================================================== -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-4" id="materialsGrid">
+        
+        <!-- Category 1: Paper & Cardboard -->
+        <div class="col-lg-6 material-item-col" data-category="paper" data-aos="fade-up">
+          <div class="material-card">
+            <div class="material-card-body">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="brand-logo-mark" style="width: 38px; height: 38px;">
+                    <i data-lucide="file-text" style="width: 20px; height: 20px;"></i>
+                  </div>
+                  <h4 class="mb-0">Paper &amp; Cardboard</h4>
+                </div>
+                <span class="badge-eco">Fiber Grade</span>
+              </div>
+              <p class="small text-muted mb-3">High-tensile kraft fibers recycled into packaging boxes, paper tubes, and newspaper newsprint.</p>
+
+              <div class="row g-3 mb-3">
+                <div class="col-sm-6">
+                  <h6 class="small fw-bold text-success mb-2"><i data-lucide="check-circle" class="w-4 h-4 d-inline me-1"></i> Accepted Materials:</h6>
+                  <ul class="list-unstyled small text-muted mb-0">
+                    <li>&bull; Corrugated shipping boxes</li>
+                    <li>&bull; Office copy &amp; printer paper</li>
+                    <li>&bull; Newspapers, magazines &amp; brochures</li>
+                    <li>&bull; Clean cereal &amp; dry food cartons</li>
+                    <li>&bull; Paper egg cartons</li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <h6 class="small fw-bold text-danger mb-2"><i data-lucide="x-circle" class="w-4 h-4 d-inline me-1"></i> Non-Accepted / Prohibited:</h6>
+                  <ul class="list-unstyled small text-muted mb-0">
+                    <li>&bull; Greasy pizza box bottoms</li>
+                    <li>&bull; Wax-coated paper cups &amp; plates</li>
+                    <li>&bull; Metallic gift wrapping foil</li>
+                    <li>&bull; Tissue paper, wipes &amp; napkins</li>
+                    <li>&bull; Carbon paper</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="p-3 rounded-3 bg-body-tertiary mt-auto">
+                <strong class="d-block small text-body mb-1"><i data-lucide="info" class="w-3 h-3 d-inline text-success me-1"></i> Preparation Rule:</strong>
+                <p class="small text-muted mb-0">Flatten all cardboard boxes completely. Remove plastic shipping tape and styrofoam inserts before placing in container.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Plastics -->
+        <div class="col-lg-6 material-item-col" data-category="plastic" data-aos="fade-up" data-aos-delay="100">
+          <div class="material-card">
+            <div class="material-card-body">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="brand-logo-mark" style="width: 38px; height: 38px;">
+                    <i data-lucide="box" style="width: 20px; height: 20px;"></i>
+                  </div>
+                  <h4 class="mb-0">Plastics &amp; Rigid Polymers</h4>
+                </div>
+                <span class="badge-eco">Resin #1, #2, #5</span>
+              </div>
+              <p class="small text-muted mb-3">Clean rigid bottles and tubs reprocessed into food-safe circular rPET and rHDPE resin pellets.</p>
+
+              <div class="row g-3 mb-3">
+                <div class="col-sm-6">
+                  <h6 class="small fw-bold text-success mb-2"><i data-lucide="check-circle" class="w-4 h-4 d-inline me-1"></i> Accepted Materials:</h6>
+                  <ul class="list-unstyled small text-muted mb-0">
+                    <li>&bull; PET clear water &amp; soda bottles (#1)</li>
+                    <li>&bull; HDPE milk jugs &amp; shampoo bottles (#2)</li>
+                    <li>&bull; PP yogurt tubs &amp; food containers (#5)</li>
+                    <li>&bull; Clean LDPE pallet wrap films (#4)</li>
+                    <li>&bull; Plastic bottle caps (screwed on)</li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <h6 class="small fw-bold text-danger mb-2"><i data-lucide="x-circle" class="w-4 h-4 d-inline me-1"></i> Non-Accepted / Prohibited:</h6>
+                  <ul class="list-unstyled small text-muted mb-0">
+                    <li>&bull; Polystyrene / Styrofoam (#6)</li>
+                    <li>&bull; Crisp packets &amp; metallized pouches</li>
+                    <li>&bull; Black plastic ready-meal trays</li>
+                    <li>&bull; Plastic garden hoses or PVC pipes</li>
+                    <li>&bull; Toothpaste tubes</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="p-3 rounded-3 bg-body-tertiary mt-auto">
+                <strong class="d-block small text-body mb-1"><i data-lucide="info" class="w-3 h-3 d-inline text-success me-1"></i> Preparation Rule:</strong>
+                <p class="small text-muted mb-0">Empty all residual liquids and rinse containers lightly. Screw caps firmly back onto bottles to prevent losing them during mechanical trommel screening.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Glass -->
+        <div class="col-lg-6 material-item-col" data-category="glass" data-aos="fade-up">
+          <div class="material-card">
+            <div class="material-card-body">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="brand-logo-mark" style="width: 38px; height: 38px;">
+                    <i data-lucide="wine" style="width: 20px; height: 20px;"></i>
+                  </div>
+                  <h4 class="mb-0">Glass Bottles &amp; Jars</h4>
+                </div>
+                <span class="badge-eco">Infinitely Recyclable</span>
+              </div>
+              <p class="small text-muted mb-3">Color-sorted into flint (clear), green, and amber cullet, melted in electric furnaces with zero structural degradation.</p>
+
+              <div class="row g-3 mb-3">
+                <div class="col-sm-6">
+                  <h6 class="small fw-bold text-success mb-2"><i data-lucide="check-circle" class="w-4 h-4 d-inline me-1"></i> Accepted Materials:</h6>
+                  <ul class="list-unstyled small text-muted mb-0">
+                    <li>&bull; Wine, beer &amp; liquor bottles</li>
+                    <li>&bull; Jam, pickle &amp; sauce jars</li>
+                    <li>&bull; Clear condiment glass bottles</li>
+                    <li>&bull; Glass perfume &amp; cosmetic bottles</li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <h6 class="small fw-bold text-danger mb-2"><i data-lucide="x-circle" class="w-4 h-4 d-inline me-1"></i> Non-Accepted / Prohibited:</h6>
+                  <ul class="list-unstyled small text-muted mb-0">
+                    <li>&bull; Pyrex &amp; heat-resistant cookware</li>
+                    <li>&bull; Window panes &amp; mirrors</li>
+                    <li>&bull; Drinking glasses &amp; crystal</li>
+                    <li>&bull; Lightbulbs &amp; fluorescent tubes</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="p-3 rounded-3 bg-body-tertiary mt-auto">
+                <strong class="d-block small text-body mb-1"><i data-lucide="info" class="w-3 h-3 d-inline text-success me-1"></i> Preparation Rule:</strong>
+                <p class="small text-muted mb-0">Rinse out food residue. Metal lids and corks can be left loose in the glass bin (they are removed by eddy-current and air-density magnets).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4: Metals -->
+        <div class="col-lg-6 material-item-col" data-category="metals" data-aos="fade-up" data-aos-delay="100">
+          <div class="material-card">
+            <div class="material-card-body">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="brand-logo-mark" style="width: 38px; height: 38px;">
+                    <i data-lucide="shield" style="width: 20px; height: 20px;"></i>
+                  </div>
+                  <h4 class="mb-0">Metals &amp; Aluminium</h4>
+                </div>
+                <span class="badge-eco">High Energy Savings</span>
+              </div>
+              <p class="small text-muted mb-3">Recycling aluminium cans uses 95% less energy than producing virgin aluminium from bauxite ore.</p>
+
+              <div class="row g-3 mb-3">
+                <div class="col-sm-6">
+                  <h6 class="small fw-bold text-success mb-2"><i data-lucide="check-circle" class="w-4 h-4 d-inline me-1"></i> Accepted Materials:</h6>
+                  <ul class="list-unstyled small text-muted mb-0">
+                    <li>&bull; Aluminium drinks cans</li>
+                    <li>&bull; Steel &amp; tin food cans</li>
+                    <li>&bull; Clean aluminium baking foil</li>
+                    <li>&bull; Metal jar lids &amp; crown bottle caps</li>
+                    <li>&bull; Empty aerosol cans</li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <h6 class="small fw-bold text-danger mb-2"><i data-lucide="x-circle" class="w-4 h-4 d-inline me-1"></i> Non-Accepted / Prohibited:</h6>
+                  <ul class="list-unstyled small text-muted mb-0">
+                    <li>&bull; Paint tins with wet paint inside</li>
+                    <li>&bull; Pressurized gas cylinders &amp; butane</li>
+                    <li>&bull; Scrap cutlery &amp; kitchen knives</li>
+                    <li>&bull; Barbed wire &amp; heavy rebar</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="p-3 rounded-3 bg-body-tertiary mt-auto">
+                <strong class="d-block small text-body mb-1"><i data-lucide="info" class="w-3 h-3 d-inline text-success me-1"></i> Preparation Rule:</strong>
+                <p class="small text-muted mb-0">Rinse tins. Roll clean aluminium foil into a ball (golf-ball sized or larger) so sorting blowers detect it reliably.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 5: Electronics (WEEE) -->
+        <div class="col-lg-6 material-item-col" data-category="electronics" data-aos="fade-up">
+          <div class="material-card">
+            <div class="material-card-body">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="brand-logo-mark" style="width: 38px; height: 38px;">
+                    <i data-lucide="cpu" style="width: 20px; height: 20px;"></i>
+                  </div>
+                  <h4 class="mb-0">Electronics &amp; IT (WEEE)</h4>
+                </div>
+                <span class="badge-eco">Certified Data Shredding</span>
+              </div>
+              <p class="small text-muted mb-3">Precious mineral extraction, circuit board smelting, and certified ISO/ADISA data sanitization.</p>
+
+              <div class="row g-3 mb-3">
+                <div class="col-sm-6">
+                  <h6 class="small fw-bold text-success mb-2"><i data-lucide="check-circle" class="w-4 h-4 d-inline me-1"></i> Accepted Materials:</h6>
+                  <ul class="list-unstyled small text-muted mb-0">
+                    <li>&bull; Laptops, desktops &amp; server racks</li>
+                    <li>&bull; Monitors, TVs &amp; display screens</li>
+                    <li>&bull; Keyboards, cables &amp; chargers</li>
+                    <li>&bull; Small household appliances (toasters, irons)</li>
+                    <li>&bull; Telecoms equipment &amp; routers</li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <h6 class="small fw-bold text-danger mb-2"><i data-lucide="x-circle" class="w-4 h-4 d-inline me-1"></i> Non-Accepted in Standard Bin:</h6>
+                  <ul class="list-unstyled small text-muted mb-0">
+                    <li>&bull; Must NOT go in normal wheelie bins!</li>
+                    <li>&bull; Damaged or swollen lithium batteries</li>
+                    <li>&bull; Industrial radioactive smoke detectors</li>
+                    <li>&bull; Uncertified medical X-ray equipment</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="p-3 rounded-3 bg-body-tertiary mt-auto">
+                <strong class="d-block small text-body mb-1"><i data-lucide="info" class="w-3 h-3 d-inline text-success me-1"></i> Preparation Rule:</strong>
+                <p class="small text-muted mb-0">Book a dedicated WEEE electronic collection box or pallet drop. Hard drives can be tracked with serialized audit destruction logs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 6: Batteries -->
+        <div class="col-lg-6 material-item-col" data-category="batteries" data-aos="fade-up" data-aos-delay="100">
+          <div class="material-card">
+            <div class="material-card-body">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="brand-logo-mark" style="width: 38px; height: 38px;">
+                    <i data-lucide="battery-charging" style="width: 20px; height: 20px;"></i>
+                  </div>
+                  <h4 class="mb-0">Batteries &amp; Energy Cells</h4>
+                </div>
+                <span class="badge-eco">Hazardous Control</span>
+              </div>
+              <p class="small text-muted mb-3">Specialist hydrometallurgical processing to recover lithium, cobalt, nickel, and manganese safely without thermal runaway.</p>
+
+              <div class="row g-3 mb-3">
+                <div class="col-sm-6">
+                  <h6 class="small fw-bold text-success mb-2"><i data-lucide="check-circle" class="w-4 h-4 d-inline me-1"></i> Accepted Materials:</h6>
+                  <ul class="list-unstyled small text-muted mb-0">
+                    <li>&bull; Standard alkaline (AA, AAA, 9V, C, D)</li>
+                    <li>&bull; Button cell watch &amp; hearing aid cells</li>
+                    <li>&bull; Lithium-ion laptop &amp; phone packs</li>
+                    <li>&bull; Power tool battery packs</li>
+                    <li>&bull; Automotive 12V lead-acid batteries</li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <h6 class="small fw-bold text-danger mb-2"><i data-lucide="x-circle" class="w-4 h-4 d-inline me-1"></i> Non-Accepted / Strict Warning:</h6>
+                  <ul class="list-unstyled small text-muted mb-0">
+                    <li>&bull; Never place batteries in mixed recycling!</li>
+                    <li>&bull; Punctured or smoking batteries</li>
+                    <li>&bull; Corroded acid leakage without tub</li>
+                    <li>&bull; High-voltage grid utility packs</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="p-3 rounded-3 bg-body-tertiary mt-auto">
+                <strong class="d-block small text-body mb-1"><i data-lucide="info" class="w-3 h-3 d-inline text-success me-1"></i> Preparation Rule:</strong>
+                <p class="small text-muted mb-0">Place insulating tape over positive terminals of 9V and lithium batteries. Use our flame-retardant battery deposit caddies.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 7: Organic & Food Waste -->
+        <div class="col-lg-6 material-item-col" data-category="organic" data-aos="fade-up">
+          <div class="material-card">
+            <div class="material-card-body">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="brand-logo-mark" style="width: 38px; height: 38px;">
+                    <i data-lucide="sprout" style="width: 20px; height: 20px;"></i>
+                  </div>
+                  <h4 class="mb-0">Organic &amp; Food Waste</h4>
+                </div>
+                <span class="badge-eco">Anaerobic Bio-Energy</span>
+              </div>
+              <p class="small text-muted mb-3">Digested in sealed bio-reactors, generating renewable electricity and high-nutrient agricultural bio-fertilizer.</p>
+
+              <div class="row g-3 mb-3">
+                <div class="col-sm-6">
+                  <h6 class="small fw-bold text-success mb-2"><i data-lucide="check-circle" class="w-4 h-4 d-inline me-1"></i> Accepted Materials:</h6>
+                  <ul class="list-unstyled small text-muted mb-0">
+                    <li>&bull; Fruit, vegetable peels &amp; cores</li>
+                    <li>&bull; Coffee grounds &amp; paper filter bags</li>
+                    <li>&bull; Cooked &amp; raw food leftovers</li>
+                    <li>&bull; Meat scraps &amp; small bones</li>
+                    <li>&bull; Certified compostable liners (EN 13432)</li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <h6 class="small fw-bold text-danger mb-2"><i data-lucide="x-circle" class="w-4 h-4 d-inline me-1"></i> Non-Accepted / Prohibited:</h6>
+                  <ul class="list-unstyled small text-muted mb-0">
+                    <li>&bull; Standard plastic shopping bags</li>
+                    <li>&bull; Glass, metal, or cutlery items</li>
+                    <li>&bull; Dog or cat pet waste</li>
+                    <li>&bull; Cooking oil in bulk liquid drums</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="p-3 rounded-3 bg-body-tertiary mt-auto">
+                <strong class="d-block small text-body mb-1"><i data-lucide="info" class="w-3 h-3 d-inline text-success me-1"></i> Preparation Rule:</strong>
+                <p class="small text-muted mb-0">Line kitchen caddies exclusively with 100% compostable certified bags. Never tie using standard polyethylene twist ties.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PICKUP CTA
+       ========================================================================== -->
+  <section class="section-padding bg-body-tertiary">
+    <div class="container text-center">
+      <h3 class="mb-3">Have Questionable or Unlisted Materials?</h3>
+      <p class="text-muted mx-auto mb-4" style="max-width: 600px;">
+        Our laboratory waste chemists can test and classify unknown industrial compounds or provide customized containment bins.
+      </p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="contact.html" class="btn-primary-custom">
+          <span>Contact Materials Support</span>
+          <i data-lucide="mail" style="width: 16px; height: 16px;"></i>
+        </a>
+        <a href="services.html" class="btn-outline-custom">
+          <span>Explore All Services</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5">
+        
+        <div class="col-lg-4">
+          <a href="index.html" class="brand-logo mb-3" style="color: #FFFFFF;">
+            <div class="brand-logo-mark">
+              <i data-lucide="recycle" style="width: 24px; height: 24px;"></i>
+            </div>
+            <div class="brand-logo-text">
+              <span class="text-white">VERDANT</span>
+              <small class="text-white-50">CLEAN ENERGY &amp; RECYCLING</small>
+            </div>
+          </a>
+          <p class="small text-white-50 mb-4 pe-lg-4">
+            Verdant Ecosystems is a pioneering circular resource management and clean energy conversion corporation. We divert 99% of materials from landfill through advanced optical sorting and closed-loop remanufacturing.
+          </p>
+
+          <div class="d-flex align-items-center gap-2">
+            <a href="#" class="btn-icon" aria-label="LinkedIn" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: #fff;">
+              <i data-lucide="linkedin" style="width: 18px; height: 18px;"></i>
+            </a>
+            <a href="#" class="btn-icon" aria-label="Twitter / X" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: #fff;">
+              <i data-lucide="twitter" style="width: 18px; height: 18px;"></i>
+            </a>
+            <a href="#" class="btn-icon" aria-label="Instagram" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: #fff;">
+              <i data-lucide="instagram" style="width: 18px; height: 18px;"></i>
+            </a>
+            <a href="#" class="btn-icon" aria-label="YouTube" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: #fff;">
+              <i data-lucide="youtube" style="width: 18px; height: 18px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-title">Explore</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">All 8 Services</a></li>
+            <li><a href="materials.html" class="footer-link">Accepted Materials</a></li>
+            <li><a href="process.html" class="footer-link">Process &amp; Impact</a></li>
+            <li><a href="service-areas.html" class="footer-link">Service Areas</a></li>
+            <li><a href="contact.html" class="footer-link">Pickup Enquiry</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h5 class="footer-title">Recycling Services</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="services.html#residential" class="footer-link">Residential Recycling</a></li>
+            <li><a href="services.html#commercial" class="footer-link">Commercial &amp; Retail</a></li>
+            <li><a href="services.html#industrial" class="footer-link">Industrial Waste Solutions</a></li>
+            <li><a href="services.html#plastic" class="footer-link">Polymer &amp; Plastic Loops</a></li>
+            <li><a href="services.html#ewaste" class="footer-link">E-Waste &amp; Battery Safety</a></li>
+            <li><a href="services.html#paper" class="footer-link">Paper &amp; Cardboard Baling</a></li>
+            <li><a href="services.html#bulk" class="footer-link">Bulk Skip &amp; Roll-On Drops</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5 class="footer-title">Stay Informed</h5>
+          <p class="small text-white-50 mb-3">
+            Subscribe for circular economy whitepapers, compliance updates, and material market indices.
+          </p>
+
+          <form class="newsletter-form mb-4">
+            <div class="input-group">
+              <input type="email" class="form-control form-control-custom" placeholder="name@company.com" required style="background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.15); color: #fff;">
+              <button class="btn btn-lime" type="submit" style="padding: 0.6rem 1.2rem;">
+                <i data-lucide="send" style="width: 16px; height: 16px;"></i>
+              </button>
+            </div>
+          </form>
+
+          <div class="p-3 rounded-3" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <i data-lucide="phone-call" style="width: 16px; height: 16px; color: #A8D85C;"></i>
+              <span class="small fw-bold text-white">24/7 Operations Hotline</span>
+            </div>
+            <a href="tel:08004567890" class="fw-bold fs-6 text-decoration-none" style="color: #A8D85C;">0800 456 7890</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <p class="mb-0 text-white-50 small">
+          &copy; 2027 Verdant Ecosystems Ltd. All rights reserved. Registered Waste Carrier &amp; Broker Brokerage CBDU129840.
+        </p>
+
+        <div class="d-flex align-items-center gap-3">
+          <a href="contact.html" class="text-white-50 small hover-white">Privacy Policy</a>
+          <span class="text-white-50">&bull;</span>
+          <a href="contact.html" class="text-white-50 small hover-white">Terms of Waste Supply</a>
+          <span class="text-white-50">&bull;</span>
+          <a href="login.html" class="text-white-50 small hover-white">Staff / Portal Login</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/components.js"></script>
+</body>
+</html>

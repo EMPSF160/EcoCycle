@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recycling Services | Verdant Ecosystems - End-to-End Waste Solutions</title>
+  <meta name="description" content="Discover our 8 specialized recycling services for residential, commercial, industrial, plastic, WEEE, paper, metal, and bulk waste.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23A8D85C'><path d='M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A7.003 7.003 0 0 1 5.07 11H5a1 1 0 0 1 0-2h.07A7.003 7.003 0 0 1 11 3.07V3a1 1 0 0 1 2 0v.07A7.003 7.003 0 0 1 18.93 9H19a1 1 0 0 1 0 2h-.07A7.003 7.003 0 0 1 13 16.93z'/></svg>">
+
+  <!-- Core Libraries CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container-fluid px-lg-5">
+      <div class="d-flex align-items-center justify-content-between">
+        
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo" aria-label="Verdant Ecosystems Homepage">
+          <div class="brand-logo-mark">
+            <i data-lucide="recycle" style="width: 24px; height: 24px;"></i>
+          </div>
+          <div class="brand-logo-text">
+            <span>VERDANT</span>
+            <small>CLEAN ENERGY &amp; RECYCLING</small>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Bar -->
+        <nav class="d-none d-xl-flex align-items-center gap-1" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link-custom">Home</a>
+          <a href="about.html" class="nav-link-custom">About Us</a>
+
+          <!-- Services Dropdown -->
+          <div class="dropdown">
+            <a href="services.html" class="nav-link-custom active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span>Recycling Services</span>
+              <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-custom">
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="services.html#residential">
+                  <i data-lucide="home" style="width: 16px; height: 16px; color: var(--color-primary);"></i>
+                  <span>Residential Recycling</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="services.html#commercial">
+                  <i data-lucide="building-2" style="width: 16px; height: 16px; color: var(--color-primary);"></i>
+                  <span>Commercial &amp; Enterprise</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="services.html#industrial">
+                  <i data-lucide="factory" style="width: 16px; height: 16px; color: var(--color-primary);"></i>
+                  <span>Industrial Waste Systems</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="services.html#ewaste">
+                  <i data-lucide="cpu" style="width: 16px; height: 16px; color: var(--color-primary);"></i>
+                  <span>Electronic Waste (WEEE)</span>
+                </a>
+              </li>
+              <li><hr class="dropdown-divider my-1"></li>
+              <li>
+                <a class="dropdown-item dropdown-item-custom text-success fw-bold" href="services.html">
+                  <i data-lucide="layers" style="width: 16px; height: 16px;"></i>
+                  <span>View All 8 Services</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <a href="materials.html" class="nav-link-custom">Accepted Materials</a>
+          <a href="process.html" class="nav-link-custom">Process &amp; Impact</a>
+          <a href="service-areas.html" class="nav-link-custom">Service Areas</a>
+          <a href="contact.html" class="nav-link-custom">Contact</a>
+        </nav>
+
+        <!-- Right Header Utility Controls (Desktop) -->
+        <div class="d-none d-xl-flex align-items-center gap-2">
+          <button type="button" class="btn-icon theme-toggle-btn" aria-label="Toggle Theme">
+            <span class="theme-icon"><i data-lucide="moon" style="width: 18px; height: 18px;"></i></span>
+          </button>
+
+          <button type="button" class="btn-icon dir-toggle-btn" aria-label="Toggle RTL/LTR">
+            <span class="dir-label fw-bold" style="font-size: 0.78rem;">RTL</span>
+          </button>
+
+          <div class="auth-nav-slot ms-1">
+            <a href="login.html" class="btn btn-outline-custom py-2 px-3" style="font-size: 0.88rem;">
+              <i data-lucide="log-in" style="width: 16px; height: 16px;"></i>
+              <span>Client Portal</span>
+            </a>
+          </div>
+
+          <a href="contact.html" class="btn-lime py-2 px-3 ms-1" style="font-size: 0.88rem;">
+            <i data-lucide="calendar" style="width: 16px; height: 16px;"></i>
+            <span>Schedule Pickup</span>
+          </a>
+        </div>
+
+        <!-- Mobile & Tablet Hamburger Button (Shown < 1200px) -->
+        <div class="d-flex d-xl-none align-items-center">
+          <button class="btn btn-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavDrawer" aria-controls="mobileNavDrawer" aria-label="Open Navigation Menu" style="width: 42px; height: 42px;">
+            <i data-lucide="menu" style="width: 22px; height: 22px;"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MOBILE OFFCANVAS DRAWER (360px, 768px, 1024px)
+       ========================================================================== -->
+  <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileNavDrawer" aria-labelledby="mobileNavDrawerLabel">
+    <div class="offcanvas-header border-bottom border-light p-3">
+      <div class="d-flex align-items-center gap-2">
+        <div class="brand-logo-mark" style="width: 36px; height: 36px;">
+          <i data-lucide="recycle" style="width: 20px; height: 20px;"></i>
+        </div>
+        <span class="fw-bold fs-5" id="mobileNavDrawerLabel">VERDANT</span>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
+      <div class="d-flex flex-column gap-2">
+        <a href="index.html" class="nav-link-custom fs-6 py-2">Home</a>
+        <a href="about.html" class="nav-link-custom fs-6 py-2">About Us</a>
+        
+        <!-- Mobile Services Collapsible Dropdown -->
+        <div>
+          <button class="nav-link-custom fs-6 py-2 w-100 justify-content-between bg-transparent border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mobileServicesCollapse" aria-expanded="false" aria-controls="mobileServicesCollapse">
+            <span>Recycling Services</span>
+            <i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i>
+          </button>
+          <div class="collapse" id="mobileServicesCollapse">
+            <div class="d-flex flex-column gap-1 ps-3 pe-3 py-1 border-start border-2 border-light ms-2 my-1">
+              <a href="services.html#residential" class="nav-link-custom small py-1 text-muted">Residential Recycling</a>
+              <a href="services.html#commercial" class="nav-link-custom small py-1 text-muted">Commercial &amp; Enterprise</a>
+              <a href="services.html#industrial" class="nav-link-custom small py-1 text-muted">Industrial Waste Systems</a>
+              <a href="services.html#plastic" class="nav-link-custom small py-1 text-muted">Plastics &amp; Polymers</a>
+              <a href="services.html#ewaste" class="nav-link-custom small py-1 text-muted">Electronic Waste (WEEE)</a>
+              <a href="services.html" class="nav-link-custom small py-1 text-success fw-bold">All 8 Services &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="materials.html" class="nav-link-custom fs-6 py-2">Accepted Materials</a>
+        <a href="process.html" class="nav-link-custom fs-6 py-2">Process &amp; Environmental Impact</a>
+        <a href="service-areas.html" class="nav-link-custom fs-6 py-2">Service Coverage Areas</a>
+        <a href="contact.html" class="nav-link-custom fs-6 py-2">Contact &amp; Pickup Enquiry</a>
+
+        <hr class="my-3 border-light">
+
+        <div class="d-flex align-items-center justify-content-between py-2">
+          <span class="small fw-bold">Appearance:</span>
+          <button type="button" class="btn btn-outline-custom theme-toggle-btn py-1 px-3" style="font-size: 0.85rem;">
+            <span class="theme-icon me-1"><i data-lucide="moon" style="width: 14px; height: 14px;"></i></span>
+            <span>Switch Theme</span>
+          </button>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-between py-2">
+          <span class="small fw-bold">Reading Direction:</span>
+          <button type="button" class="btn btn-outline-custom dir-toggle-btn py-1 px-3" style="font-size: 0.85rem;">
+            <i data-lucide="languages" style="width: 14px; height: 14px; margin-inline-end: 4px;"></i>
+            <span class="dir-label">RTL</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="pt-4 border-top border-light mt-auto">
+        <div class="auth-nav-slot mb-2">
+          <a href="login.html" class="btn btn-outline-custom w-100 justify-content-center">
+            <i data-lucide="log-in" style="width: 16px; height: 16px;"></i>
+            <span>Client Portal Login</span>
+          </a>
+        </div>
+        <a href="contact.html" class="btn-lime w-100 justify-content-center">
+          <i data-lucide="truck" style="width: 16px; height: 16px;"></i>
+          <span>Schedule Waste Pickup</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       PAGE HERO HEADER
+       ========================================================================== -->
+  <section class="page-hero-header">
+    <div class="hero-bg-overlay" style="background-image: url('im/n1ce-cyhbay0tuvs-unsplash.jpg');"></div>
+    <div class="container">
+      <div class="breadcrumb-custom">
+        <a href="index.html">Home</a>
+        <i data-lucide="chevron-right" style="width: 14px; height: 14px;" class="icon-flip-rtl"></i>
+        <span>Our Recycling Services</span>
+      </div>
+      <h1 class="page-title">Comprehensive Circular Waste Services</h1>
+      <p class="page-lead">
+        From neighborhood municipal collections to heavy industrial zero-landfill infrastructure, we deliver certified closed-loop resource logistics for every sector.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SERVICES FILTER BUTTONS
+       ========================================================================== -->
+  <section class="py-4 border-bottom border-light bg-body-tertiary">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center gap-2">
+        <span class="small fw-bold me-2 text-muted">Filter by Sector:</span>
+        <a href="#all" class="material-filter-pill active" data-filter="all">All Services (8)</a>
+        <a href="#commercial" class="material-filter-pill" data-filter="commercial">Commercial &amp; Enterprise</a>
+        <a href="#industrial" class="material-filter-pill" data-filter="industrial">Heavy Industry</a>
+        <a href="#municipal" class="material-filter-pill" data-filter="municipal">Municipal &amp; Residential</a>
+        <a href="#specialized" class="material-filter-pill" data-filter="specialized">Specialized &amp; E-Waste</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8 DETAILED SERVICE CARDS
+       ========================================================================== -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-4" id="servicesGrid">
+        
+        <!-- Service 1: Residential Recycling -->
+        <div class="col-md-6 col-lg-6 service-item-col" data-category="municipal" id="residential" data-aos="fade-up">
+          <div class="service-card h-100">
+            <div class="service-card-media">
+              <img src="im/marc-newberry-9vcEn3BJyy8-unsplash.jpg" alt="Residential Recycling Collection" loading="lazy">
+              <span class="service-badge">Municipal &amp; Residential</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">1. Residential Recycling</h3>
+              <p>
+                Quiet, zero-emission municipal wheelie bin collections for urban councils and residential communities. Includes dual-stream food waste, mixed paper, glass, and domestic plastics with smart RFID tracking on all bins.
+              </p>
+              <ul class="service-feature-list">
+                <li><i data-lucide="check"></i> 100% Electric, low-noise collection fleet</li>
+                <li><i data-lucide="check"></i> Missed bin alerts &amp; route notification SMS</li>
+                <li><i data-lucide="check"></i> Zero-contamination resident educational packs</li>
+              </ul>
+              <div class="mt-auto pt-3 border-top border-light d-flex justify-content-between align-items-center">
+                <span class="small text-muted fw-bold">Flexible Weekly / Bi-Weekly</span>
+                <a href="contact.html?service=residential" class="btn-lime py-2 px-3 small">Enquire For Residential</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2: Commercial Recycling -->
+        <div class="col-md-6 col-lg-6 service-item-col" data-category="commercial" id="commercial" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card h-100">
+            <div class="service-card-media">
+              <img src="im/tommao-wang-U6e6mTcsdok-unsplash.jpg" alt="Commercial Waste Management" loading="lazy">
+              <span class="service-badge">Commercial &amp; Enterprise</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">2. Commercial Recycling</h3>
+              <p>
+                Scalable waste management designed for office buildings, retail high streets, hospitality venues, and corporate headquarters. Includes internal multi-stream separation stations and verified monthly ESG diversion certificates.
+              </p>
+              <ul class="service-feature-list">
+                <li><i data-lucide="check"></i> 240L to 1100L commercial wheeled bins</li>
+                <li><i data-lucide="check"></i> Timed out-of-hours collection windows</li>
+                <li><i data-lucide="check"></i> Audited carbon savings certificates for ESG reporting</li>
+              </ul>
+              <div class="mt-auto pt-3 border-top border-light d-flex justify-content-between align-items-center">
+                <span class="small text-muted fw-bold">Daily / On-Demand Service</span>
+                <a href="contact.html?service=commercial" class="btn-lime py-2 px-3 small">Enquire For Commercial</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3: Industrial Waste Management -->
+        <div class="col-md-6 col-lg-6 service-item-col" data-category="industrial" id="industrial" data-aos="fade-up">
+          <div class="service-card h-100">
+            <div class="service-card-media">
+              <img src="im/sasun-bughdaryan-PRJDZIHKNzU-unsplash.jpg" alt="Industrial Waste Management" loading="lazy">
+              <span class="service-badge">Heavy Industry</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">3. Industrial Waste Management</h3>
+              <p>
+                Engineered solutions for manufacturing plants, automotive factories, chemical producers, and construction contractors. We supply heavy compactors, balers, and roll-on roll-off containers with full hazardous waste duty-of-care consignment notes.
+              </p>
+              <ul class="service-feature-list">
+                <li><i data-lucide="check"></i> Heavy roll-on roll-off (RoRo) containers (20–40 cu yd)</li>
+                <li><i data-lucide="check"></i> Hazardous materials consignment compliance</li>
+                <li><i data-lucide="check"></i> On-site compaction machinery leasing &amp; maintenance</li>
+              </ul>
+              <div class="mt-auto pt-3 border-top border-light d-flex justify-content-between align-items-center">
+                <span class="small text-muted fw-bold">Custom Contract / 24/7 Logistics</span>
+                <a href="contact.html?service=industrial" class="btn-lime py-2 px-3 small">Enquire For Industrial</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4: Plastic Recycling -->
+        <div class="col-md-6 col-lg-6 service-item-col" data-category="specialized" id="plastic" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card h-100">
+            <div class="service-card-media">
+              <img src="im/cheung-yin-lVFqmoc0r8w-unsplash.jpg" alt="Plastic Polymers Recycling" loading="lazy">
+              <span class="service-badge">Polymer Science</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">4. Plastic Polymer Recycling</h3>
+              <p>
+                Advanced optical sorting and high-purity reprocessing of post-consumer and post-industrial polymers. We process PET bottles, HDPE jugs, PP crates, and LDPE clear shrink film, converting them into circular food-grade pellets and flannels.
+              </p>
+              <ul class="service-feature-list">
+                <li><i data-lucide="check"></i> NIR (Near-Infrared) laser spectrum separation</li>
+                <li><i data-lucide="check"></i> Hot-wash decontamination &amp; friction scrubbing</li>
+                <li><i data-lucide="check"></i> Traceable European chemical standard compliance</li>
+              </ul>
+              <div class="mt-auto pt-3 border-top border-light d-flex justify-content-between align-items-center">
+                <span class="small text-muted fw-bold">High-Purity Resin Feedstocks</span>
+                <a href="contact.html?service=plastic" class="btn-lime py-2 px-3 small">Enquire For Plastics</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 5: Electronic Waste (WEEE) -->
+        <div class="col-md-6 col-lg-6 service-item-col" data-category="specialized" id="ewaste" data-aos="fade-up">
+          <div class="service-card h-100">
+            <div class="service-card-media">
+              <img src="im/khaleb-lacaba-sKNxjo76r3c-unsplash.jpg" alt="Electronic Waste Collection" loading="lazy">
+              <span class="service-badge">High Tech &amp; WEEE</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">5. Electronic Waste (WEEE) Collection</h3>
+              <p>
+                Secure lifecycle retirement for enterprise IT infrastructure, telecom equipment, server racks, laptops, and consumer electronics. Features ADISA and NIST 800-88 certified hard drive degaussing and precision precious metals extraction.
+              </p>
+              <ul class="service-feature-list">
+                <li><i data-lucide="check"></i> Guaranteed digital data sanitization &amp; shredding</li>
+                <li><i data-lucide="check"></i> Serialized certificates of disposal for compliance</li>
+                <li><i data-lucide="check"></i> Gold, copper, and rare earth element recovery</li>
+              </ul>
+              <div class="mt-auto pt-3 border-top border-light d-flex justify-content-between align-items-center">
+                <span class="small text-muted fw-bold">Secure Chain-Of-Custody</span>
+                <a href="contact.html?service=ewaste" class="btn-lime py-2 px-3 small">Enquire For WEEE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 6: Paper & Cardboard Recycling -->
+        <div class="col-md-6 col-lg-6 service-item-col" data-category="commercial" id="paper" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card h-100">
+            <div class="service-card-media">
+              <img src="im/chelsea-WvusC5M-TM8-unsplash.jpg" alt="Paper and Cardboard Recycling Bales" loading="lazy">
+              <span class="service-badge">Fiber Recovery</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">6. Paper &amp; Cardboard Baling</h3>
+              <p>
+                Closed-loop fiber solutions for logistics hubs, distribution warehouses, retail chains, and print houses. We supply high-density on-site balers, collect consolidated mill-size bales, and deliver pulp back to paper packaging mills.
+              </p>
+              <ul class="service-feature-list">
+                <li><i data-lucide="check"></i> Mill-size 500kg bale collections with rebate options</li>
+                <li><i data-lucide="check"></i> Clean confidential document shredding (BS EN 15713)</li>
+                <li><i data-lucide="check"></i> 100% repulping in UK and European paper mills</li>
+              </ul>
+              <div class="mt-auto pt-3 border-top border-light d-flex justify-content-between align-items-center">
+                <span class="small text-muted fw-bold">Volume Rebates Available</span>
+                <a href="contact.html?service=paper" class="btn-lime py-2 px-3 small">Enquire For Cardboard</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 7: Metal & Glass Recycling -->
+        <div class="col-md-6 col-lg-6 service-item-col" data-category="specialized" id="metalglass" data-aos="fade-up">
+          <div class="service-card h-100">
+            <div class="service-card-media">
+              <img src="im/killari-hotaru-aK859Jaekls-unsplash.jpg" alt="Metal and Glass Scrap Recycling" loading="lazy">
+              <span class="service-badge">Infinite Materials</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">7. Metal &amp; Glass Recycling</h3>
+              <p>
+                Ferrous and non-ferrous metals (aluminium, copper, steel, brass) and color-separated glass cullet. Both metals and glass can be melted and remanufactured indefinitely with zero loss in structural integrity, saving up to 95% of virgin smelting energy.
+              </p>
+              <ul class="service-feature-list">
+                <li><i data-lucide="check"></i> Eddy-current magnetic aluminium and steel separators</li>
+                <li><i data-lucide="check"></i> Optical color-sorted cullet (clear, green, amber)</li>
+                <li><i data-lucide="check"></i> Scrap metal weighbridge certification &amp; payments</li>
+              </ul>
+              <div class="mt-auto pt-3 border-top border-light d-flex justify-content-between align-items-center">
+                <span class="small text-muted fw-bold">100% Infinitely Recyclable</span>
+                <a href="contact.html?service=metal" class="btn-lime py-2 px-3 small">Enquire For Metals &amp; Glass</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 8: Bulk Waste Collection -->
+        <div class="col-md-6 col-lg-6 service-item-col" data-category="industrial" id="bulk" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card h-100">
+            <div class="service-card-media">
+              <img src="im/zoshua-colah-ejOnc0S8yD4-unsplash.jpg" alt="Bulk Waste Skip and Truck Collection" loading="lazy">
+              <span class="service-badge">Logistics &amp; Skips</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">8. Bulk Waste Collection &amp; Skips</h3>
+              <p>
+                Rapid response skip hire, grab lorry services, and scheduled bulky clearing for commercial fit-outs, facility refurbishments, and industrial site clearances. Every skip load is hand-sorted and mechanically screened at our transfer depots.
+              </p>
+              <ul class="service-feature-list">
+                <li><i data-lucide="check"></i> 4-yard to 40-yard skips and hook loaders</li>
+                <li><i data-lucide="check"></i> Guaranteed same-day or next-day delivery options</li>
+                <li><i data-lucide="check"></i> Full site waste management plans (SWMP) provided</li>
+              </ul>
+              <div class="mt-auto pt-3 border-top border-light d-flex justify-content-between align-items-center">
+                <span class="small text-muted fw-bold">Same-Day Dispatch</span>
+                <a href="contact.html?service=bulk" class="btn-lime py-2 px-3 small">Enquire For Bulk Skip</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CALL TO ACTION BANNER
+       ========================================================================== -->
+  <section class="section-padding bg-body-tertiary">
+    <div class="container">
+      <div class="card-modern p-4 p-md-5 text-white" style="background: linear-gradient(135deg, #142C25 0%, #1e463a 100%);">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <h3 class="text-white mb-2">Need a Customized Multi-Site Waste Management Plan?</h3>
+            <p class="text-white-50 mb-0">Our senior circular resource auditors will evaluate your company’s waste streams and outline a 99% landfill diversion strategy.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="contact.html" class="btn-lime py-3 px-4">
+              <span>Book An On-Site Waste Audit</span>
+              <i data-lucide="calendar" style="width: 18px; height: 18px;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5">
+        
+        <div class="col-lg-4">
+          <a href="index.html" class="brand-logo mb-3" style="color: #FFFFFF;">
+            <div class="brand-logo-mark">
+              <i data-lucide="recycle" style="width: 24px; height: 24px;"></i>
+            </div>
+            <div class="brand-logo-text">
+              <span class="text-white">VERDANT</span>
+              <small class="text-white-50">CLEAN ENERGY &amp; RECYCLING</small>
+            </div>
+          </a>
+          <p class="small text-white-50 mb-4 pe-lg-4">
+            Verdant Ecosystems is a pioneering circular resource management and clean energy conversion corporation. We divert 99% of materials from landfill through advanced optical sorting and closed-loop remanufacturing.
+          </p>
+
+          <div class="d-flex align-items-center gap-2">
+            <a href="#" class="btn-icon" aria-label="LinkedIn" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: #fff;">
+              <i data-lucide="linkedin" style="width: 18px; height: 18px;"></i>
+            </a>
+            <a href="#" class="btn-icon" aria-label="Twitter / X" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: #fff;">
+              <i data-lucide="twitter" style="width: 18px; height: 18px;"></i>
+            </a>
+            <a href="#" class="btn-icon" aria-label="Instagram" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: #fff;">
+              <i data-lucide="instagram" style="width: 18px; height: 18px;"></i>
+            </a>
+            <a href="#" class="btn-icon" aria-label="YouTube" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: #fff;">
+              <i data-lucide="youtube" style="width: 18px; height: 18px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-title">Explore</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">All 8 Services</a></li>
+            <li><a href="materials.html" class="footer-link">Accepted Materials</a></li>
+            <li><a href="process.html" class="footer-link">Process &amp; Impact</a></li>
+            <li><a href="service-areas.html" class="footer-link">Service Areas</a></li>
+            <li><a href="contact.html" class="footer-link">Pickup Enquiry</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h5 class="footer-title">Recycling Services</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="services.html#residential" class="footer-link">Residential Recycling</a></li>
+            <li><a href="services.html#commercial" class="footer-link">Commercial &amp; Retail</a></li>
+            <li><a href="services.html#industrial" class="footer-link">Industrial Waste Solutions</a></li>
+            <li><a href="services.html#plastic" class="footer-link">Polymer &amp; Plastic Loops</a></li>
+            <li><a href="services.html#ewaste" class="footer-link">E-Waste &amp; Battery Safety</a></li>
+            <li><a href="services.html#paper" class="footer-link">Paper &amp; Cardboard Baling</a></li>
+            <li><a href="services.html#bulk" class="footer-link">Bulk Skip &amp; Roll-On Drops</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5 class="footer-title">Stay Informed</h5>
+          <p class="small text-white-50 mb-3">
+            Subscribe for circular economy whitepapers, compliance updates, and material market indices.
+          </p>
+
+          <form class="newsletter-form mb-4">
+            <div class="input-group">
+              <input type="email" class="form-control form-control-custom" placeholder="name@company.com" required style="background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.15); color: #fff;">
+              <button class="btn btn-lime" type="submit" style="padding: 0.6rem 1.2rem;">
+                <i data-lucide="send" style="width: 16px; height: 16px;"></i>
+              </button>
+            </div>
+          </form>
+
+          <div class="p-3 rounded-3" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <i data-lucide="phone-call" style="width: 16px; height: 16px; color: #A8D85C;"></i>
+              <span class="small fw-bold text-white">24/7 Operations Hotline</span>
+            </div>
+            <a href="tel:08004567890" class="fw-bold fs-6 text-decoration-none" style="color: #A8D85C;">0800 456 7890</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <p class="mb-0 text-white-50 small">
+          &copy; 2027 Verdant Ecosystems Ltd. All rights reserved. Registered Waste Carrier &amp; Broker Brokerage CBDU129840.
+        </p>
+
+        <div class="d-flex align-items-center gap-3">
+          <a href="contact.html" class="text-white-50 small hover-white">Privacy Policy</a>
+          <span class="text-white-50">&bull;</span>
+          <a href="contact.html" class="text-white-50 small hover-white">Terms of Waste Supply</a>
+          <span class="text-white-50">&bull;</span>
+          <a href="login.html" class="text-white-50 small hover-white">Staff / Portal Login</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/components.js"></script>
+
+  <script>
+    // Quick Sector Filter Script on services.html
+    document.querySelectorAll('.material-filter-pill').forEach(pill => {
+      pill.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelectorAll('.material-filter-pill').forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        const filter = pill.getAttribute('data-filter');
+        document.querySelectorAll('.service-item-col').forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
